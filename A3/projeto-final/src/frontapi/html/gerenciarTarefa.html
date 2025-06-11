@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciar Tarefas - Supervisor</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<a href="supervisor.html" class="btn btn-back">← Voltar</a>
+
+<div class="container">
+  <main class="content-box">
+    <h2>Gerenciar Tarefas dos Funcionários</h2>
+
+    <form id="search-tasks-form" class="form-layout">
+      <div class="form-group">
+        <label for="search-funcionarioId">Digite o ID do Funcionário:</label>
+        <input type="number" id="search-funcionarioId" name="funcionarioId" placeholder="Digite o ID para buscar" required>
+      </div>
+      <button type="submit" class="btn">Buscar Tarefas</button>
+    </form>
+
+    <hr class="separator">
+
+    <div id="task-results-container">
+      <p id="search-results-message">Digite um ID e clique em buscar para ver as tarefas.</p>
+    </div>
+  </main>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

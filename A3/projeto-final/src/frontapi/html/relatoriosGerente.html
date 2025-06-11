@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatórios - Gerente</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<a href="gerente.html" class="btn btn-back">← Voltar</a>
+
+<div class="container">
+  <main class="content-box">
+    <h2>Emissão de Relatórios</h2>
+
+    <form id="report-form" class="form-layout">
+      <div class="form-group">
+        <label for="report-type">Tipo de Relatório:</label>
+        <select id="report-type" name="report-type">
+          <option value="todas-tarefas">Relação de todas as tarefas</option>
+          <option value="tarefas-pendentes">Relação de tarefas pendentes</option>
+          <option value="funcionarios-livres">Relação de funcionários sem tarefas</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Emitir Relatório</button>
+    </form>
+
+    <hr class="separator">
+
+    <div id="report-results-container">
+      <p>Selecione um tipo de relatório e clique em "Emitir Relatório".</p>
+    </div>
+  </main>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

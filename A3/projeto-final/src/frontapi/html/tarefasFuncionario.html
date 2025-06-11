@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificar Tarefas Pendentes</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a href="funcionario.html" class="btn btn-back">← Voltar</a>
+
+<div class="container">
+
+  <main class="content-box">
+    <h2>Verificar Minhas Tarefas Pendentes</h2>
+
+    <form id="check-tasks-form" class="form-layout">
+      <div class="form-group">
+        <label for="check-employee-id">Digite seu ID de Funcionário:</label>
+        <input type="number" id="check-employee-id" placeholder="Seu ID aqui" required>
+      </div>
+      <button type="submit" class="btn">Verificar Tarefas</button>
+    </form>
+
+    <hr class="separator">
+
+    <div id="check-tasks-results-container">
+      <p>Digite seu ID para ver suas tarefas.</p>
+    </div>
+  </main>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

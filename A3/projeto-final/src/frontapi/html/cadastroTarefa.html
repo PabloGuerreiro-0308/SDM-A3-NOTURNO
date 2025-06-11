@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Tarefa - Supervisor</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<a href="supervisor.html" class="btn btn-back">← Voltar</a>
+
+<div class="container">
+  <main class="content-box">
+    <h2>Cadastrar Nova Tarefa</h2>
+    <p>Preencha os campos abaixo para adicionar uma nova tarefa ao sistema.</p>
+
+    <form id="create-task-form" class="form-layout">
+      <div class="form-group">
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" placeholder="Descreva a tarefa..." rows="4" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="funcionarioId">ID do Funcionário:</label>
+        <input type="number" id="funcionarioId" name="funcionarioId" placeholder="Ex: 12345" required>
+      </div>
+
+      <button type="submit" class="btn">Cadastrar Tarefa</button>
+    </form>
+  </main>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
